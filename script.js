@@ -8,16 +8,16 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection) {
-  if (playerSelection === "rock") {
+  if (playerSelection === computerSelection) {
+    return `It is a tie! You both picked ${playerSelection}.`
+  } else if (playerSelection === "rock") {
     if (computerSelection === "paper") {
       computerScore++;
       return "You lose! Paper beats rock!";
     } else if (computerSelection === "scissors") {
       playerScore++;
       return "You win! Rock beats scissors!";
-    } else {
-      return "It is a tie!";
-    }
+    } 
   } else if (playerSelection === "paper") {
     if (computerSelection === "rock") {
       playerScore++;
@@ -25,9 +25,7 @@ function playRound(playerSelection, computerSelection) {
     } else if (computerSelection === "scissors") {
       computerScore++;
       return "You lose! Scissors beats paper!";
-    } else {
-      return "It is a tie!";
-    }
+    } 
   } else if (playerSelection === "scissors") {
     if (computerSelection === "rock") {
       computerScore++;
@@ -35,9 +33,7 @@ function playRound(playerSelection, computerSelection) {
     } else if (computerSelection === "paper") {
       playerScore++;
       return "You win! Scissors beats paper!";
-    } else {
-      return "It is a tie!";
-    }
+    } 
   }
 }
 
@@ -50,15 +46,15 @@ function playRound(playerSelection, computerSelection) {
 function game() {
   for (let i=0; i<5; i++) {
   const computerSelection = computerPlay();
-  const playerSelection = prompt("Choose your weapon!Rock, Paper or Scissors?", "Type it bitch!").toLowerCase();
-  playRound(playerSelection, computerSelection);
+  const playerSelection = prompt("Choose your weapon! Rock, Paper or Scissors?", "Type it bitch!").toLowerCase();
+  console.log(playRound(playerSelection, computerSelection));
 }
 if (playerScore === computerScore) {
-  alert("It is a fucking tie!");
+  console.log("It is a fucking draw!");
 } else if (playerScore > computerScore) {
-  alert("You fucking won!");
+  console.log("Dat's ma boi! You fucking won the game!");
 } else {
-  alert("You lost, lol!");
+  console.log("You lost the game, lol!");
 }
 }
 
