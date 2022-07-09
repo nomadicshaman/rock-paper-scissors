@@ -50,15 +50,15 @@ function playRound(playerSelection, computerSelection) {
 function game() {
   for (let i=0; i<5; i++) {
   const computerSelection = computerPlay();
-  const playerSelection = prompt("Choose your weapon!", "Type it bitch!").toLowerCase();
+  const playerSelection = prompt("Choose your weapon!Rock, Paper or Scissors?", "Type it bitch!").toLowerCase();
   playRound(playerSelection, computerSelection);
 }
 if (playerScore === computerScore) {
-  return "It is a fucking tie!";
+  alert("It is a fucking tie!");
 } else if (playerScore > computerScore) {
-  return "You fucking won!"
+  alert("You fucking won!");
 } else {
-  return "You lost, lol!"
+  alert("You lost, lol!");
 }
 }
 
