@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.mainBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    border-style: dotted;
+    width: 750px;
+    height: 500px;
+    margin-top: 20px;
+    
+
+    
+}
+.btnContainer {
+    display: flex;
+    border-style: solid;
+    gap: 50px;
+    margin-top: 30px;
+    height: 75px;
+    align-items: center;
+}
+
+.resultContainer {
+    border-style: solid;
+    width: 300px;
+    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+.scoreContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-style: solid;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.options,
+.optionsAgain {
+    width: 100px;
+    height: 50px;
+    border-radius: 40px;
+    outline: solid 2px black;
+    transition: outline 0.1s linear;
+    margin: 0.5em; /* Increased margin since the outline expands outside the element */
+    
+   
+}
+
+.optionsAfterGame {
+    width: 100px;
+    height: 50px;
+    border-radius: 40px;
+    outline: solid 2px black;
+    transition: outline 0.1s linear;
+    margin: 0.5em; /* Increased margin since the outline expands outside the element */
+}
+
+  .options:hover,
+  .optionsAgain:hover { outline-width: 5px; }
