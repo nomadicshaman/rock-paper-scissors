@@ -136,3 +136,21 @@ scissorsBtn.addEventListener("click", function () {
   playGame("scissors");
 });
 
+
+
+
+let mySound = new Audio('click.wav');
+
+scissorsBtn.addEventListener("click", function () {
+  mySound.play();
+});
+
+rockBtn.addEventListener("click", function () {
+  mySound.play();
+});
+
+paperBtn.addEventListener("click", function () {
+  
+  mySound.play();
+  
+});

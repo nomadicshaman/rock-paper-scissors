@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="styles.css">  
-  </head>
-  <body>
-<div class="mainBody">
-  <h1>Welcome to the Rock, Paper, Scissors!</h1>
-  <div class="btnContainer">
-    <input type="image" class="options" id="rock" src="rock.png"> 
-    <input type="image" class="options" id="paper" src="paper.png"> 
-    <input type="image" class="options" id="scissors" src="scissors.png"> 
-  </div>
 
-  <div class="resultContainer">
-    <p>Do you think you can win?</p>
-    <p id="resultRound"></p>
-    <p id="resultGame"></p>
-  </div>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-  <div class="scoreContainer">
-    <div class="robot">
-      <p id="robotScore">Computer 0</p>     
+<body>
+  <div class="mainBody">
+    <h1>Welcome to the Rock, Paper, Scissors!</h1>
+    <div class="btnContainer">
+      <input type="image" class="options" id="rock" src="rock.png">
+      <input type="image" class="options" id="paper" src="paper.png">
+      <input type="image" class="options" id="scissors" src="scissors.png">
     </div>
-    <div class="human">
-      <p id="humanScore">Human 0</p>
+
+    <div class="resultContainer">
+      <p>Do you think you can win?</p>
+      <p id="resultRound"></p>
+      <p id="resultGame"></p>
     </div>
+
+    <div class="scoreContainer">
+      <div class="robot">
+        <p id="robotScore">Computer 0</p>
+      </div>
+      <div class="human">
+        <p id="humanScore">Human 0</p>
+      </div>
+    </div>
+    <button type="button" class="optionsAfterGame" id="playAgain">Play again?</button>
   </div>
-  <button type="button" class="optionsAfterGame" id="playAgain" >Play again?</button> 
-</div>
-      <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>

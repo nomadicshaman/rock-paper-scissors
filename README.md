@@ -1,6 +1,6 @@
 # rock-paper-scissors
-Repo for Rock Paper Scissors Assignment by TOP
+My Rock-Paper-Scissors game.
 
-In this repo, I am going to try to code a Rock Paper Scissors game with JavaScript.
+In this repo, I am going to build Rock Paper Scissors game with HTML, CSS and JS.
 
-This is an experimental note.
+[For live demo](https://nomadicshaman.github.io/rock-paper-scissors/)
